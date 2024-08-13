@@ -1,2 +1,2 @@
-# C-
-Simple Learning
+# C#
+Simple Learning Path for C#
