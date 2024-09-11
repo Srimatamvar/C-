@@ -1,36 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace ssITP10CSharpPractical
+namespace ForIteraion
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Recursion : Print even or odd numbers in a given range: ");
-            Console.WriteLine("------------------------------------------------------");
-            Console.Write("Input the range to print starting from 1: ");
-
-
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.Write($"All even numbers from 1 to {n} are:\n");
-            for (int i = 1; i <= n; i++)
+            for(int i=0; i < 10; i++)
             {
-                if (i % 2 == 0)
-                    Console.Write($"{i}\t");
-
-            }
-            Console.Write($"\nAll odd numbers from 1 to {n} are: \n");
-            for (int i = 1; i <= n; i++) {
-                
-                if (i % 2 != 0)
-                    Console.Write($"{i}\t");
-
-
+                if (i == 7)
+                {
+                    Console.WriteLine("Found seven! ");
+                    break;
+                }
             }
 
-            Console.ReadLine();
 
+            for (int x = 0; x < 12; x++)
+            {
+                Console.WriteLine(x);
+            }
+
+
+            Console.ReadLine();        
         }
     }
 }
